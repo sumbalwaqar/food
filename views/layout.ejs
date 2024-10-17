@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Ordering</title>
+  <link rel="stylesheet" href='/stylesheets/style.css'/>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <nav class="container mx-auto flex justify-between py-6 items-center">
+    <div class="w-40">
+        <a href="/">  <img src="images/foodpanda_logo_2023.svg" alt=""></a>
+  
+    </div>
+    <div>
+      <ul class="flex gap-6 text-xl items-center">
+        <li><a href="/menu">Menu</a></li>
+        <li><a href="/offers">Offers</a></li>
+        <li><a href="/login">LogIn</a></li>
+        <li><a href="/register">Register</a></li>
+        <li class="w-10"><a href="/cart"><img class="rounded-full" src="/images/shopping-cart.png" alt=""></a></li>
+        
+      </ul>
+    </div>
+  </nav>
+
+   <%- body %>
+</body>
+</html>

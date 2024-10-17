@@ -1,0 +1,45 @@
+body {
+  color: #333333;
+}
+
+nav ul:last-child img {
+  background-color: #E11B70;
+  padding: 3px 8px;
+  transition: all 0.3s ease-in-out;
+}
+nav ul:last-child img:hover {
+  color: #C21760;
+  cursor: pointer;
+}
+
+ul li {
+  transition: all 0.3s ease-in-out;
+}
+ul li:hover {
+  color: #E11B70;
+}
+
+.btn-primary {
+  background-color: #E11B70;
+  color: #F7F7F7;
+  transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: #C21760;
+}
+
+.hero {
+  background-color: #F7F7F7;
+  height: calc(100vh - 86px);
+}
+
+.text-primary {
+  color: #E11B70;
+}
+
+.auth-form:hover {
+  border: none;
+  outline: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+@import './variables';
+
+body{
+    color: $grey;
+   
+}
+
+nav ul:last-child img{
+    background-color: $primary;
+    padding: 3px 8px;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: $primary-hover;
+        cursor: pointer;
+    }
+}
+ul li{
+    transition:all 0.3s ease-in-out;
+    &:hover{
+        color: $primary;
+    }
+}
+.btn-primary{
+    background-color: $primary;
+    color: $secondary;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: $primary-hover;
+    }
+}
+.hero{
+    background-color: $secondary;
+    height: calc(100vh - 86px);
+}
+.text-primary{
+    color: $primary;
+}
+.auth-form{
+     &:hover{
+        border: none;
+        outline: none;
+     }
+}
