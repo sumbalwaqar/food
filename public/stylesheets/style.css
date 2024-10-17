@@ -30,7 +30,7 @@ ul li:hover {
 
 .hero {
   background-color: #F7F7F7;
-  height: calc(100vh - 86px);
+  height: calc(100vh - 56px);
 }
 
 .text-primary {
@@ -40,6 +40,10 @@ ul li:hover {
 .auth-form:hover {
   border: none;
   outline: none;
+}
+
+.size {
+  background-color: #F7F7F7;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -30,7 +30,7 @@ ul li{
 }
 .hero{
     background-color: $secondary;
-    height: calc(100vh - 86px);
+    height: calc(100vh - 56px);
 }
 .text-primary{
     color: $primary;
@@ -40,4 +40,7 @@ ul li{
         border: none;
         outline: none;
      }
+}
+.size{
+    background-color: $secondary;
 }
