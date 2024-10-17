@@ -1,5 +1,6 @@
 body {
   color: #333333;
+  overflow-x: hidden;
 }
 
 nav ul:last-child img {
