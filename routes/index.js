@@ -1,17 +1,13 @@
 var express = require('express');
 var router = express.Router();
+const Home = require('./home');
+const auth = require('./auth');
+const cart = require('./cart');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
-router.get('/login', function(req, res, next) {
-  res.render('auth/login');
-})
-
-router.get('/register', function(req, res, next) {
-  res.render('auth/register');
-})
+router.get('/', Home);
+router.get('/login',auth().login);
+router.get('/register',auth().register);
+router.get('/cart', cart);
 
 module.exports = router;
