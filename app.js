@@ -3,15 +3,27 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const expressLayout = require('express-ejs-layouts');
+const mongoose = require('mongoose');
+
 var app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
+
+// Connect to MongoDB
+const url = ('mongodb://localhost:27017/food-ordering')
+mongoose
+  .connect(url)
+  // .connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('Connected to MongoDB'))
+  .catch(err => console.error('Could not connect to MongoDB', err));
+
 
 app.use(logger('dev'));
 app.use(expressLayout);

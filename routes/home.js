@@ -1,7 +1,13 @@
+const Menu = require('../models/menu');
+
 // routes/home.js
-function home(req, res, next) {
-    res.render('index'); // Rendering the 'index' view when the home route is accessed
-  }
-  
-  module.exports = home; // Exporting the function
-  
+function home() {
+  return {
+    async index(req, res, next) {
+      const menuItems = await Menu.find()
+      res.render('index',{menuItems: menuItems})
+    }
+  };
+}
+
+module.exports = home; // Exporting the function

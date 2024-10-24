@@ -5,7 +5,7 @@ const auth = require('./auth');
 const cart = require('./cart');
 
 /* GET home page. */
-router.get('/', Home);
+router.get('/', Home().index);
 router.get('/login',auth().login);
 router.get('/register',auth().register);
 router.get('/cart', cart);

@@ -1,9 +1,9 @@
 function auth() {
      return {
-      login(req, res) {
+      login(req, res, next) {
         res.render('auth/login');
       },
-      register(req, res) {
+      register(req, res, next) {
         res.render('auth/register');
       }
      }    
